@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+main{
+    position: relative;
+}
+.main-nav{
+    display: flex;
+    min-height: 8vh;
+    transform: translateY(10%);
+    transition: all 0.5s;
+}
+
+.main-logo{
+    padding: 10px;
+}
+
+.main-logo > img{
+    transform: translateX(10%);
+    width:50vh;
+    height: auto;
+}
+
+.main-ul{
+    display: flex;
+    justify-content: space-around;
+    width:50%;
+    transition: all 0.3s;
+}
+
+.main-ul > li{
+    padding: 20px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #3a3939;
+}
+
+.a-hover-effect:hover{
+    font-weight: 600;
+    /* border-bottom: #3a3939 0.125em solid; */
+    /* box-shadow: rgba(0,0,0,0.8) 0px 1px 1px,inset rgba(0,0,0,0.15) 0px 1px 1px; */   
+}
+
+.burger-logo{
+    display: none;
+    cursor: pointer;
+}
+
+.burger-logo div{
+   display:flex;
+   justify-content: space-around;
+   background-color: #3a3939;
+   width:25px;
+   height:2px;
+   margin:5px;
+   transform :translateY(27px);
+   transition: all 0.3s ease;
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    /* body.modal-open {
+        overflow: hidden;
+        position: fixed;
+    } */
+
+    .main-logo{
+        transform: translateX(-10%);
+    }
+
+    .main-ul{
+        position: absolute;
+        right: 0px;
+        height:92vh;
+        top:8vh;
+        background:url(./images/MenuBackground.png) no-repeat center center ;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    #home-id{
+        border:2px solid #000000;
+        border-radius:100%;
+        background-color: #eeeeee;
+    }
+    /* .main-ul li{
+        opacity: 0;
+    }    */
+    .burger-logo{
+        display: block;
+        transform: translateX(-100%);
+    }
+}
+
+.activate-nav-mobile{
+    transform: translateX(0%);
+}
+
+.cross .line1{
+    transform: rotate(-45deg) translate(-35px,8px);
+}
+
+.cross .line2{
+    opacity: 0;
+}
+
+.cross .line3{
+    transform: rotate(45deg) translate(-1px,25px);
+}
