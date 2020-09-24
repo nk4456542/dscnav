@@ -1,4 +1,4 @@
-*{
+ *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +8,7 @@ body{
     margin:0;
     font-family: 'Kumbh Sans', sans-serif;
 }
+
 main{
     position: relative;
 }
@@ -33,10 +34,11 @@ main{
     justify-content: space-around;
     width:50%;
     transition: all 0.3s;
-}
+} 
 
-.main-ul > li{
-    padding: 20px;
+ .main-ul > li{ 
+    /* font-size: 1.2rem; */
+     padding: 20px;
     list-style: none;
 }
 
@@ -46,10 +48,10 @@ a{
 }
 
 .a-hover-effect:hover{
-    font-weight: 600;
+    font-weight: 600; 
     /* border-bottom: #3a3939 0.125em solid; */
     /* box-shadow: rgba(0,0,0,0.8) 0px 1px 1px,inset rgba(0,0,0,0.15) 0px 1px 1px; */   
-}
+ } 
 
 .burger-logo{
     display: none;
