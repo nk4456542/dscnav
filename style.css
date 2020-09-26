@@ -18,7 +18,7 @@ main{
     /* min-height: 8vh; */
     /* padding:20px;     */
     transition: all 0.5s;
-    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.5); */
     background-color: #ffffff;
     /* height: 80px; */
     z-index: 10;
@@ -78,7 +78,7 @@ a{
 }
 
 .sticky-nav-bar{
-    position: sticky;
+    position: fixed;
     top:0;
     width:100%;
     z-index:100;
@@ -253,3 +253,6 @@ a{
     transform: rotate(45deg) translate(-1px,25px);
 }
 
+.add-shadow{
+  box-shadow:  0px 2px 2px 0px rgba(60, 64, 67, 0.3);
+}

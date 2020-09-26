@@ -18,3 +18,12 @@ const mobileNav = () => {
 
 mobileNav();
 
+
+window.addEventListener('scroll', (e) => {
+    const nav = document.querySelector('.main-nav');
+    if (window.pageYOffset > 0) {
+        nav.classList.add("add-shadow");
+    } else {
+        nav.classList.remove("add-shadow");
+    }
+});
