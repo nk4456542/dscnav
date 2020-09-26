@@ -40,3 +40,10 @@ window.addEventListener('scroll', (e) => {
 
 
 
+
+
+//#4b72a1
+//#254d7e
+
+//#007FFF
+//#0b3d91
