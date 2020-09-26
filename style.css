@@ -210,7 +210,7 @@ a{
         position: absolute;
         height:100vh;
         top:0vh;
-        background:url(./images/Group1.png) no-repeat;
+        background:url(./images/MenuBackground.png) no-repeat;
         background-size: 50%;
         background-blend-mode: lighten;
         background-position: right bottom;
