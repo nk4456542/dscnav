@@ -14,7 +14,7 @@ const mobileNav = () => {
         navlinks.classList.toggle('activate-nav-mobile');
         getBurger.classList.toggle('cross');
     })
-}
+};
 
 mobileNav();
 
@@ -27,3 +27,16 @@ window.addEventListener('scroll', (e) => {
         nav.classList.remove("add-shadow");
     }
 });
+
+window.addEventListener('scroll', (e) => {
+    const logo = document.getElementById('image-display');
+    if (window.pageYOffset > 0) {
+        logo.style.display = "flex";
+    }
+    else {
+        logo.style.display = "none";
+    }
+});
+
+
+
