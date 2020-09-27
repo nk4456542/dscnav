@@ -118,8 +118,13 @@ a{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    border:1px solid #232424;
+    /* border:1px solid #232424; */
     font-size: 1.3rem;
+    box-shadow: 2px 4px 40px rgba(19, 15, 235, 0.1);
+}
+.projects:hover{
+    transition: all 4s ease;
+    border:1px solid #4b4b4b;
 }
 
 .projects h3{
