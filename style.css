@@ -214,11 +214,11 @@ a{
     .main-ul{
         position: absolute;
         height:100vh;
-        top:0vh;
+        top:0;
         background:url(./images/MenuBackground.png) no-repeat;
-        background-size: 50%;
-        background-blend-mode: lighten;
-        background-position: right bottom;
+        background-size: 100%;
+        background-blend-mode:luminosity;
+        background-position:  right -25vw bottom;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
