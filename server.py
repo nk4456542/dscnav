@@ -17,7 +17,7 @@ def server():
         message = message.encode()
         serverSocket.sendto(message, clientAddress)
         for i in range(int(userInput)):
-            number, clientAddress2 = serverSocket.recvfrom(BUFFER_SIZE)
+            number, clientAddress = serverSocket.recvfrom(BUFFER_SIZE)
             print(number.decode())
 
 
